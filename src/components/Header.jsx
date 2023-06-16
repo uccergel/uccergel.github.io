@@ -7,6 +7,7 @@ import TwitterIcon from '../icons/TwitterIcon'
 import InstagramIcon from '../icons/InstagramIcon'
 import GithubIcon from '../icons/GithubIcon'
 import LinkedinIcon from '../icons/LinkedinIcon'
+import MediumIcon from '../icons/MediumIcon'
 
 export default function Header() {
   return (
@@ -18,7 +19,7 @@ export default function Header() {
           <NavLink to="/posts">Yazılarım</NavLink>
           <NavLink to="/readings">Okuduklarım</NavLink>
         </nav>
-        <div className="flex space-x-3">
+        <section className="flex space-x-3">
           <NavLink to="https://twitter.com/uccergel" target="_blank">
             <TwitterIcon />
           </NavLink>
@@ -28,13 +29,13 @@ export default function Header() {
           <NavLink to="https://github.com/uccergel" target="_blank">
             <GithubIcon />
           </NavLink>
-          <NavLink
-            to="https://tr.linkedin.com/in/u%C4%9Fur-cem-%C3%A7ergel-92356a127"
-            target="_blank"
-          >
+          <NavLink to="https://tr.linkedin.com/in/uccergel" target="_blank">
             <LinkedinIcon />
           </NavLink>
-        </div>
+          <NavLink to="https://medium.com/@uccergel" target="_blank">
+            <MediumIcon />
+          </NavLink>
+        </section>
       </div>
       <Routes>
         <Route path="/" element={<HomePage />} />
